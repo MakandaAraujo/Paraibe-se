@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background: linear-gradient(0deg, rgba(159,169,142,1) 32%, rgb(214, 169, 73) 100%);
+}
+
+#logo {
+    display: flex;
+}
+
+#containerTextoIntro{
+    padding: 15px 7px 15px 7px;
+}
+#containerTextoIntroChild{
+    background-color: #D0A53E;
+    transform: rotate(0.25deg);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#textoIntro {
+    text-align: left;
+    color: #F5ECCB;
+    padding: 10px 0 0 10px;
+}
+#textoIntroAss{
+    text-align: right;
+    color: #F5ECCB;
+    padding: 10px 0 0 10px;
+}
+
+#imgATV {
+    width: 90%;
+}
+.navButtons{
+    display: flex;
+    justify-content: center;
+    background-color: #C56A5B;
+    border: 2px solid #F5ECCB;
+    border-radius: 3px;
+    padding-top: 1.5px;
+    padding-bottom: 6px;
+}
+
+.navButtons > a{
+    color: black;
+}
+
+.navButtonsStyle {
+  background: whitesmoke;
+  border-radius: 999px;
+  box-shadow: whitesmoke 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #120c0c;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 15px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  text-decoration: none;
+}
+
+#wText{
+    justify-content: center;
+    text-align: center;
+    color: #F5ECCB;
+    padding: 10px 0 0 10px;
+}
+
+#textoDescritivo {
+    display: flex;
+    justify-items: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #F5ECCB;
+}
+
+.plantGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 5px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.plantGrid1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #D0A53E;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.plantGrid2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #D0A53E;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.plantGrid3{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #D0A53E;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.plantGrid4{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #D0A53E;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.plantGrid5{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #D0A53E;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.plantGrid6{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #D0A53E;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.roteiroPrimeiro{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+.roteiroSegundo{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+}
+
+.roteiro{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: none;
+    transition: all .3s ease-in-out;
+}
+
+.container {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+  padding: 24px 0;
+  transition: all 0.25s ease-in;
+}
+
+.carousel-view .item-list {
+  max-width: 950px;
+  width: 100vw;
+  padding: 50px 10px;
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  transition: all 0.25s ease-in;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+
+
+.item-list::-webkit-scrollbar {
+  display: none;
+  background-color: red;
+}
+
+.prev-btn {
+  background: none;
+  cursor: pointer;
+}
+
+.next-btn {
+  cursor: pointer;
+}
+
+.imgRounded{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.containerAtracaoComImg{
+    background-color: #D0A53E;
+    border: 2px solid whitesmoke;
+}
+
+.item {
+  scroll-snap-align: center;
+  min-width: 120px;
+  height: 120px;
+}
+
+.vdo-responsive-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+    
+.vdo-responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.imgComTexto{
+    color:#F5ECCB;
+}
+
+.mapCenter{
+    display: flex;
+    justify-content: center;
+
+}
+
+#mapBorder{
+    padding-top: 10px;
+    border: 10px solid black;
+    border-radius: 15px;
+}
+
+.foot{
+    display: flex;
+    padding-top: 20px;
+}
+
+.foot > p{
+    text-align: center;
+
+}
+
+#logoFoot{
+    padding: 10px;
+}
+/*.plantGrid1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: rgb(83, 83, 161);
+}
+
+.plantGrid2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: darkred;
+}*/
+
+#carousel1 {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+  scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
+
+  margin: 0 auto 0 auto;
+  width: 100vw;
+  height: fit-content;
+  
+  border: solid #F3E6FF .5px;
+}
+
+#carousel1::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+  -webkit-overflow-scrolling: touch; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+}
+
+#footerColor{
+    color: #575244;
+}
+
+.item1 {
+  max-width: 170px;
+  min-height: 20vh;
+  margin: 15px;
+
+  font-size: 5em;
+  text-align: center;
+  line-height: 300px;
+  background-color: #FFF9EF;
+  border-radius: 7px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.itemTextCarousel {
+    max-width: 170px;
+    min-height: 20vh;
+    margin: 15px;
+    color: #F5ECCB;
+}

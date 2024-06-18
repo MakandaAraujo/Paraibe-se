@@ -1,0 +1,23 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(0deg, rgba(159,169,142,1) 32%, rgb(214, 169, 73) 100%);
+    width: 100%;    
+}
+#wText{
+    justify-content: center; 
+    text-align: center;
+    color: #F5ECCB;
+    padding: 10px 0 0 10px;
+}
+#wTextCard{
+    color: #F5ECCB;
+}
+
+#cardColor{
+background-color: #D0A53E;
+}
